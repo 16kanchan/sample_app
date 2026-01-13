@@ -264,10 +264,9 @@ DEPENDENCIES
   rails (~> 7.1.0)
   selenium-webdriver
   sprockets-rails
-  sqlite3
+  sqlite3 (~> 1.4)
   stimulus-rails
   turbo-rails
-  tzinfo-data
   web-console
 
 CHECKSUMS

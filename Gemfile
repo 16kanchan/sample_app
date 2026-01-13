@@ -6,34 +6,33 @@ ruby "3.2.9"
 # Rails本体
 gem "rails", "~> 7.1.0"
 
-# 基本的なgem
+# 基本機能
 gem "sprockets-rails"
 gem "puma", ">= 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
-gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 
-# ▼▼▼ ここが重要：開発とテスト環境だけ SQLite3 を使う ▼▼▼
+# 開発・テスト環境（SQLite3を使う）
 group :development, :test do
-  gem "sqlite3"
+  gem "sqlite3", "~> 1.4"
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
-# 開発環境用ツール
+# 開発環境のみ
 group :development do
   gem "web-console"
 end
 
-# テスト環境用ツール
+# テスト環境のみ
 group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
 
-# ▼▼▼ ここが重要：本番環境（Render）は Postgres を使う ▼▼▼
+# 本番環境（Render用：Postgresを使う）
 group :production do
   gem "pg"
 end
