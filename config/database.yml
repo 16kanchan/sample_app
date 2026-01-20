@@ -13,8 +13,9 @@ test:
 
 production:
   <<: *default
-  # ▼ ここから下を修正（adapterをpostgresqlにし、urlを追加）
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV['DATABASE_URL'] %>
+  database: sample_app_production
+  username: sample_app
+  password: <%= ENV["SAMPLE_APP_DATABASE_PASSWORD"] %>
