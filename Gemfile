@@ -30,6 +30,7 @@ end
 group :test do
   gem "capybara"
   gem "selenium-webdriver"
+  gem "minitest", "< 6.0"
 end
 
 # 本番環境（Render用：Postgresを使う）
