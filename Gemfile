@@ -36,3 +36,5 @@ end
 group :production do
   gem "pg"
 end
+
+# Render restart trigger
