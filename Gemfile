@@ -24,6 +24,7 @@ end
 # 開発環境のみ
 group :development do
   gem "web-console"
+  gem "guard"
 end
 
 # テスト環境のみ
@@ -31,6 +32,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "minitest", "< 6.0"
+  gem "guard-minitest"
 end
 
 # 本番環境（Render用：Postgresを使う）
