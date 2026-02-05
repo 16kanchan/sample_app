@@ -33,6 +33,7 @@ group :test do
   gem "selenium-webdriver"
   gem "minitest", "< 6.0"
   gem "guard-minitest"
+  gem "minitest-reporters", ">= 1.0.5"
 end
 
 # 本番環境（Render用：Postgresを使う）
