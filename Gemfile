@@ -6,8 +6,11 @@ ruby "3.2.9"
 # Rails本体
 gem "rails", "~> 7.1.0"
 
+
 # 基本機能
-gem "sprockets-rails"
+gem "sprockets-rails", "3.4.2"  # ← バージョンを指定
+gem "bootstrap-sass", "3.4.1"   # ← これを追加！
+gem "sassc-rails", "2.1.2"      # ← これも追加！
 gem "puma", ">= 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
