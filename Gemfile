@@ -5,6 +5,7 @@ ruby "3.2.9"
 
 # Rails本体
 gem "rails", "~> 7.1.0"
+gem "bcrypt", "~> 3.1.18"
 
 
 # 基本機能
